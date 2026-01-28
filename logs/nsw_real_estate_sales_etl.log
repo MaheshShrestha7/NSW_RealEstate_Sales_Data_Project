@@ -1,0 +1,13 @@
+2026-01-29 00:52:36,757 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data started | year=2025
+2026-01-29 00:52:36,757 | INFO | nsw_sales_extract | Downloading data from https://www.valuergeneral.nsw.gov.au/__psi/yearly/2025.zip for year 2025
+2026-01-29 00:52:37,033 | INFO | nsw_sales_extract | Extracting and parsing nested ZIP files...
+2026-01-29 00:52:39,022 | INFO | nsw_sales_extract | Found 52 weekly files.
+2026-01-29 00:52:40,546 | INFO | nsw_sales_extract | Merging 237661 rows into DataFrame.
+2026-01-29 00:52:42,250 | INFO | pipeline | Raw data saved | path=data/raw/nsw_sales_2025.csv | records=237661
+2026-01-29 00:52:42,250 | INFO | nsw_sales_transform | Starting transformation stage
+2026-01-29 00:52:43,358 | INFO | nsw_sales_transform | Transformation completed. Records before=237661, after=199909
+2026-01-29 00:52:43,359 | INFO | pipeline | Data transformed | records=199909 
+2026-01-29 00:52:43,359 | INFO | nsw_sales_load_to_csv | Starting load to CSV: data/curated/nsw_sales_2025.csv
+2026-01-29 00:52:44,722 | INFO | nsw_sales_load_to_csv | Load completed successfully. Records loaded: 199909
+2026-01-29 00:52:44,722 | INFO | pipeline | Curated data saved | path=data/curated/nsw_sales_2025.csv | records=199909 
+2026-01-29 00:52:44,722 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data completed successfully | curated_path=data/curated/nsw_sales_2025.csv
