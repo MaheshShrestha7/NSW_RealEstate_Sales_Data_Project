@@ -1,6 +1,21 @@
 # Requirements : 
 1. Create Required Directories : 
-    - NSW_Real_Estate_Sales
-        - input
-        - output
+    - data
+        - raw
+        - curated
+
+
+# File Structure : 
+ - NSW_Real_Estate_Sales_Data_Project
+    - etl
+        - extract 
+        - transform
+        - load
+    - data
+        - raw
+        - curated
+    - config
+    - docs    
+    - logs
+    - tests     
         
