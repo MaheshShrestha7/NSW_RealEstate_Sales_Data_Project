@@ -10,7 +10,7 @@ The goal is to demonstrate **real‑world data engineering practices**, includin
 - Parameter‑driven execution
 - Replayable and auditable data pipelines
 
-This project is designed as **Project 1: Python ETL Foundation** in a Modern Data Engineering learning path.
+
 
 ---
 
