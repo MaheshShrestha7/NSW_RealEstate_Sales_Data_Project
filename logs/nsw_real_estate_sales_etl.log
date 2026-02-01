@@ -11,3 +11,37 @@
 2026-01-29 00:52:44,722 | INFO | nsw_sales_load_to_csv | Load completed successfully. Records loaded: 199909
 2026-01-29 00:52:44,722 | INFO | pipeline | Curated data saved | path=data/curated/nsw_sales_2025.csv | records=199909 
 2026-01-29 00:52:44,722 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data completed successfully | curated_path=data/curated/nsw_sales_2025.csv
+2026-02-01 21:34:50,151 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data started | year=2024
+2026-02-01 21:34:50,151 | INFO | nsw_sales_extract | Downloading data from https://www.valuergeneral.nsw.gov.au/__psi/yearly/2024.zip for year 2024
+2026-02-01 21:34:50,571 | INFO | nsw_sales_extract | Extracting and parsing nested ZIP files...
+2026-02-01 21:34:51,733 | INFO | nsw_sales_extract | Found 53 weekly files.
+2026-02-01 21:34:57,333 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data started | year=2024
+2026-02-01 21:34:57,333 | INFO | nsw_sales_extract | Downloading data from https://www.valuergeneral.nsw.gov.au/__psi/yearly/2024.zip for year 2024
+2026-02-01 21:34:57,740 | INFO | nsw_sales_extract | Extracting and parsing nested ZIP files...
+2026-02-01 21:34:59,341 | INFO | nsw_sales_extract | Found 53 weekly files.
+2026-02-01 21:35:00,912 | INFO | nsw_sales_extract | Merging 216857 rows into DataFrame.
+2026-02-01 21:35:02,538 | INFO | pipeline | Raw data saved | path=data/raw/nsw_sales_2024.csv | records=216857
+2026-02-01 21:35:02,539 | INFO | nsw_sales_transform | Starting transformation stage
+2026-02-01 21:35:03,741 | INFO | nsw_sales_transform | Transformation completed. Records before=216857, after=198571
+2026-02-01 21:35:03,742 | INFO | pipeline | Data transformed | records=198571 
+2026-02-01 21:35:03,742 | INFO | nsw_sales_load_to_csv | Starting load to CSV: data/curated/nsw_sales_2024.csv
+2026-02-01 21:35:05,256 | INFO | nsw_sales_load_to_csv | Load completed successfully. Records loaded: 198571
+2026-02-01 21:35:05,256 | INFO | pipeline | Curated data saved | path=data/curated/nsw_sales_2024.csv | records=198571 
+2026-02-01 21:35:05,256 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data completed successfully | curated_path=data/curated/nsw_sales_2024.csv
+2026-02-01 22:04:27,969 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data started | year=2025
+2026-02-01 22:04:27,969 | INFO | nsw_sales_extract | Downloading data from https://www.valuergeneral.nsw.gov.au/__psi/yearly/2025.zip for year 2025
+2026-02-01 22:04:28,200 | INFO | nsw_sales_extract | Extracting and parsing nested ZIP files...
+2026-02-01 22:04:29,213 | INFO | nsw_sales_extract | Found 52 weekly files.
+2026-02-01 22:04:31,523 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data started | year=2025
+2026-02-01 22:04:31,523 | INFO | nsw_sales_extract | Downloading data from https://www.valuergeneral.nsw.gov.au/__psi/yearly/2025.zip for year 2025
+2026-02-01 22:04:31,785 | INFO | nsw_sales_extract | Extracting and parsing nested ZIP files...
+2026-02-01 22:04:32,709 | INFO | nsw_sales_extract | Found 52 weekly files.
+2026-02-01 22:04:34,374 | INFO | nsw_sales_extract | Merging 237661 rows into DataFrame.
+2026-02-01 22:04:36,247 | INFO | pipeline | Raw data saved | path=data/raw/nsw_sales_2025.csv | records=237661
+2026-02-01 22:04:36,247 | INFO | nsw_sales_transform | Starting transformation stage
+2026-02-01 22:04:37,518 | INFO | nsw_sales_transform | Transformation completed. Records before=237661, after=199909
+2026-02-01 22:04:37,518 | INFO | pipeline | Data transformed | records=199909 
+2026-02-01 22:04:37,518 | INFO | nsw_sales_load_to_csv | Starting load to CSV: data/curated/nsw_sales_2025.csv
+2026-02-01 22:04:39,436 | INFO | nsw_sales_load_to_csv | Load completed successfully. Records loaded: 199909
+2026-02-01 22:04:39,437 | INFO | pipeline | Curated data saved | path=data/curated/nsw_sales_2025.csv | records=199909 
+2026-02-01 22:04:39,437 | INFO | pipeline | ETL pipeline for NSW Real Estate Sales Data completed successfully | curated_path=data/curated/nsw_sales_2025.csv
