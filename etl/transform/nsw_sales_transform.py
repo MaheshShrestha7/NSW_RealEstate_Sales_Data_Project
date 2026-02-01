@@ -18,13 +18,13 @@ def transform_nsw_sales(df: pd.DataFrame) -> pd.DataFrame:
         df["Settlement_Date"] = pd.to_datetime(df["Settlement_Date"], format="%Y%m%d", errors="coerce")
 
         # Standardisation
-        df["Street_Name"] = df["Street_Name"].str.title().str.strip()
-        df["Locality"] = df["Locality"].str.title().str.strip()
-        df["Postcode"] = df["Postcode"].astype(str).str.zfill(4)
+        df["Street_Name"] = df["Street_Name"].str.title().str.strip() #Remove leading/trailing spaces
+        df["Locality"] = df["Locality"].str.title().str.strip() #Remove leading/trailing spaces
+        df["Postcode"] = df["Postcode"].astype(str).str.zfill(4) #Ensure 4-digit postcodes, padding with leading zeros if necessary (until its total length is 4)
 
         # Business rules
-        df = df[df["Purchase_Price"] > 0]
-        df = df[df["Contract_Date"].notna()]
+        df = df[df["Purchase_Price"] > 0] # Remove records with non-positive purchase prices
+        df = df[df["Contract_Date"].notna()] # Remove records with invalid contract dates
 
         # Deduplication
         df = df.drop_duplicates(
